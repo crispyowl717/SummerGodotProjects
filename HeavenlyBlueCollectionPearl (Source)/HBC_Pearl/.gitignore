@@ -1,0 +1,8 @@
+project.godot
+test.tscn
+import
+*.import
+*.flags
+Test
+*.icloud
+.DS_Store

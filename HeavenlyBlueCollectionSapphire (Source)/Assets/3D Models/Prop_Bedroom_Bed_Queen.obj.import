@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Bedroom_Bed_Queen.obj-72607ffd8a6bc6f30a055b76cfb1d540.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Bedroom_Bed_Queen.obj-72607ffd8a6bc6f30a055b76cfb1d540.mesh" ]
+
+source_file="res://Assets/3D Models/Prop_Bedroom_Bed_Queen.obj"
+dest_files=[ "res://.import/Prop_Bedroom_Bed_Queen.obj-72607ffd8a6bc6f30a055b76cfb1d540.mesh", "res://.import/Prop_Bedroom_Bed_Queen.obj-72607ffd8a6bc6f30a055b76cfb1d540.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

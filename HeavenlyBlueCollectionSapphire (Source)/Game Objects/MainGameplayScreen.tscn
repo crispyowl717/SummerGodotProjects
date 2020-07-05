@@ -1,0 +1,127 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/Music/BackgroundMusic.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Assets/UI/LightLeak.jpg" type="Texture" id=2]
+[ext_resource path="res://Scenes/General/DarkScene.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/MainGameInstance.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Shaders/CRTShader.shader" type="Shader" id=5]
+[ext_resource path="res://Scripts/Shaders/Pixelize.shader" type="Shader" id=6]
+
+[sub_resource type="ShaderMaterial" id=1]
+render_priority = 1
+shader = ExtResource( 5 )
+shader_param/screen_width = 960.0
+shader_param/screen_height = 540.0
+shader_param/BarrelPower = 1.05
+shader_param/color_bleeding = 1.35
+shader_param/bleeding_range_x = 5.0
+shader_param/bleeding_range_y = 2.5
+shader_param/lines_distance = 4.0
+shader_param/scan_size = 1.5
+shader_param/scanline_alpha = 0.9
+shader_param/lines_velocity = 30.0
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 6 )
+shader_param/size_x = 0.006
+shader_param/size_y = 0.006
+
+[sub_resource type="Animation" id=3]
+resource_name = "FadeIn"
+length = 4.0
+step = 0.02
+tracks/0/type = "value"
+tracks/0/path = NodePath("LevelCinematicPlayer/BlackOverlay:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3, 3.05 ),
+"transitions": PoolRealArray( 1, 5.32631e-12, 5.32631e-12 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LevelCinematicPlayer/BackgroundMusic:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.78, 3.62 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -43.294, -10.0, 10.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LevelCinematicPlayer/BackgroundMusic:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[node name="MainGameInstance" type="Node"]
+script = ExtResource( 4 )
+
+[node name="ViewportContainer" type="ViewportContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -68.0
+margin_bottom = 63.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="ViewportContainer"]
+size = Vector2( 960, 540 )
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="World" parent="ViewportContainer/Viewport" instance=ExtResource( 3 )]
+
+[node name="Red Haze" type="TextureRect" parent="ViewportContainer/Viewport"]
+modulate = Color( 1, 0, 0, 0.160784 )
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 2 )
+
+[node name="CRT" type="ColorRect" parent="ViewportContainer/Viewport"]
+material = SubResource( 1 )
+margin_right = 960.0
+margin_bottom = 540.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pixel" type="ColorRect" parent="ViewportContainer/Viewport"]
+self_modulate = Color( 1, 1, 1, 0.329412 )
+material = SubResource( 2 )
+margin_right = 960.0
+margin_bottom = 540.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelCinematicPlayer" type="AnimationPlayer" parent="."]
+anims/FadeIn = SubResource( 3 )
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="LevelCinematicPlayer"]
+stream = ExtResource( 1 )
+volume_db = -43.294
+pitch_scale = 0.9
+
+[node name="BlackOverlay" type="ColorRect" parent="LevelCinematicPlayer"]
+margin_top = -16.0
+margin_right = 1000.0
+margin_bottom = 984.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

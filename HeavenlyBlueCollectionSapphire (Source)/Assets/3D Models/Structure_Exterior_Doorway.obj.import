@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Exterior_Doorway.obj-1a87afb83fa64bba100498e0e5f6ac11.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Exterior_Doorway.obj-1a87afb83fa64bba100498e0e5f6ac11.mesh" ]
+
+source_file="res://Assets/3D Models/Structure_Exterior_Doorway.obj"
+dest_files=[ "res://.import/Structure_Exterior_Doorway.obj-1a87afb83fa64bba100498e0e5f6ac11.mesh", "res://.import/Structure_Exterior_Doorway.obj-1a87afb83fa64bba100498e0e5f6ac11.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Bathroom_Shower_Curtain.obj-50a9655d527289394c3c512654b29e33.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Bathroom_Shower_Curtain.obj-50a9655d527289394c3c512654b29e33.mesh" ]
+
+source_file="res://Assets/3D Models/Prop_Bathroom_Shower_Curtain.obj"
+dest_files=[ "res://.import/Prop_Bathroom_Shower_Curtain.obj-50a9655d527289394c3c512654b29e33.mesh", "res://.import/Prop_Bathroom_Shower_Curtain.obj-50a9655d527289394c3c512654b29e33.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

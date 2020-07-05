@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Stairs_Railing_Landing_Corner.obj-f6b68d27f2c59df73507c3753ba0750e.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Stairs_Railing_Landing_Corner.obj-f6b68d27f2c59df73507c3753ba0750e.mesh" ]
+
+source_file="res://Assets/3D Models/Structure_Stairs_Railing_Landing_Corner.obj"
+dest_files=[ "res://.import/Structure_Stairs_Railing_Landing_Corner.obj-f6b68d27f2c59df73507c3753ba0750e.mesh", "res://.import/Structure_Stairs_Railing_Landing_Corner.obj-f6b68d27f2c59df73507c3753ba0750e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

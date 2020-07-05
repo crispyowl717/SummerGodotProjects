@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Wall_Door.obj-b2bcefdee9a8ea6e492b07c3b44ac57f.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Wall_Door.obj-b2bcefdee9a8ea6e492b07c3b44ac57f.mesh" ]
+
+source_file="res://Assets/3D Models/Structure_Wall_Door.obj"
+dest_files=[ "res://.import/Structure_Wall_Door.obj-b2bcefdee9a8ea6e492b07c3b44ac57f.mesh", "res://.import/Structure_Wall_Door.obj-b2bcefdee9a8ea6e492b07c3b44ac57f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

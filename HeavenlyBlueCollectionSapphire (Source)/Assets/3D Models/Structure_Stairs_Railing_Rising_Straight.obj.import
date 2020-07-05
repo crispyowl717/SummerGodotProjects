@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Stairs_Railing_Rising_Straight.obj-fb9f516790462bbed5583374fd2fe290.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Stairs_Railing_Rising_Straight.obj-fb9f516790462bbed5583374fd2fe290.mesh" ]
+
+source_file="res://Assets/3D Models/Structure_Stairs_Railing_Rising_Straight.obj"
+dest_files=[ "res://.import/Structure_Stairs_Railing_Rising_Straight.obj-fb9f516790462bbed5583374fd2fe290.mesh", "res://.import/Structure_Stairs_Railing_Rising_Straight.obj-fb9f516790462bbed5583374fd2fe290.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

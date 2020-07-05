@@ -1,0 +1,5 @@
+[gd_scene format=2]
+
+[node name="SpawnerFloor" type="Node"]
+
+[node name="Container" type="Node" parent="."]

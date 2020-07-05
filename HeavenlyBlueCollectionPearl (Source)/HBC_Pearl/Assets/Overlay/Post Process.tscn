@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Shaders/CRTShader.shader" type="Shader" id=1]
+
+[sub_resource type="ShaderMaterial" id=12]
+shader = ExtResource( 1 )
+shader_param/screen_width = 1024.0
+shader_param/screen_height = 600.0
+shader_param/BarrelPower = 1.03
+shader_param/color_bleeding = 1.05
+shader_param/bleeding_range_x = 3.0
+shader_param/bleeding_range_y = 3.0
+shader_param/lines_distance = 4.0
+shader_param/scan_size = 2.0
+shader_param/scanline_alpha = 0.9
+shader_param/lines_velocity = 30.0
+
+[sub_resource type="Gradient" id=13]
+
+[sub_resource type="GradientTexture" id=14]
+gradient = SubResource( 13 )
+
+[node name="Post Process" type="TextureRect"]
+material = SubResource( 12 )
+margin_right = 40.0
+margin_bottom = 43.0
+rect_scale = Vector2( 8.03356, 4.79002 )
+texture = SubResource( 14 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

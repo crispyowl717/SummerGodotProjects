@@ -1,0 +1,176 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Scripts/UI Panels/IntroPanel.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/ObjectSans-Regular.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/SFX/aggressive-808-buzz_F_major.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/UI/KeyboardSpriteSheet.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Fonts/DialougeFont.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/UI/ControllerSpriteSheet.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UI/AngryEmoji.png" type="Texture" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "FadeToBlackAnimation"
+length = 6.0
+step = 1.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("FadeToBlack:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 100
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 12
+font_data = ExtResource( 5 )
+
+[node name="ControlsPanel" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FadeToBlackAnimation" type="AnimationPlayer" parent="."]
+anims/FadeToBlackAnimation = SubResource( 1 )
+
+[node name="BassNoise" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -10.0
+
+[node name="InputName" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 125.0
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+fit_content_height = true
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vertical Divder" type="VSeparator" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -480.0
+margin_top = -1.5
+margin_right = 480.0
+margin_bottom = 1.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FadeToBlack" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleScreen" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeavenlyBlueLogo" type="RichTextLabel" parent="TitleScreen"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -480.0
+margin_top = -133.0
+margin_right = 480.0
+margin_bottom = 133.0
+custom_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
+bbcode_text = "[center] HEAVENLY BLUE [/center]
+[center][color=#301934] 		  .Sapphire [/color][/center]"
+text = " HEAVENLY BLUE 
+ 		  .Sapphire "
+fit_content_height = true
+scroll_active = false
+
+[node name="F11 and ESC" type="RichTextLabel" parent="TitleScreen"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -57.0
+margin_bottom = -42.0
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[center]Fullscreen - F11			Quit - Esc[/center]"
+text = "Fullscreen - F11			Quit - Esc"
+fit_content_height = true
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Use Headphones" type="RichTextLabel" parent="TitleScreen"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 182.5
+margin_bottom = 204.5
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "[center]Use Headphones [/center]"
+text = "Use Headphones "
+fit_content_height = true
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AngryEmoji" type="TextureRect" parent="TitleScreen"]
+margin_left = 540.0
+margin_top = 396.0
+margin_right = 580.0
+margin_bottom = 436.0
+rect_scale = Vector2( 0.038, 0.038 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AngryEmoji" type="Sprite" parent="TitleScreen/AngryEmoji"]
+texture = ExtResource( 7 )
+
+[node name="KeyboardKey" type="Sprite" parent="."]
+visible = false
+position = Vector2( 380, 256 )
+texture = ExtResource( 4 )
+hframes = 6
+frame = 4
+region_rect = Rect2( 1, 1, 76, 72 )
+
+[node name="GamepadKey" type="Sprite" parent="."]
+visible = false
+position = Vector2( 580, 256 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 6 )
+hframes = 6
+frame = 2

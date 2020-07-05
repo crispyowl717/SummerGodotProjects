@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Living_Room_Modular_Couch_Center.obj-72457b270819f248c8f52d84b166c026.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Living_Room_Modular_Couch_Center.obj-72457b270819f248c8f52d84b166c026.mesh" ]
+
+source_file="res://Assets/3D Models/Prop_Living_Room_Modular_Couch_Center.obj"
+dest_files=[ "res://.import/Prop_Living_Room_Modular_Couch_Center.obj-72457b270819f248c8f52d84b166c026.mesh", "res://.import/Prop_Living_Room_Modular_Couch_Center.obj-72457b270819f248c8f52d84b166c026.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

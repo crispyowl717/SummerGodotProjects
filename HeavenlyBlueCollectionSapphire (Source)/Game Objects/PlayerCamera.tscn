@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Camera/PlayerCamera.gd" type="Script" id=1]
+
+
+
+[node name="PlayerCamera" type="InterpolatedCamera"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87, 0.9, 4.25 )
+keep_aspect = 0
+current = true
+fov = 60.0
+enabled = true
+script = ExtResource( 1 )

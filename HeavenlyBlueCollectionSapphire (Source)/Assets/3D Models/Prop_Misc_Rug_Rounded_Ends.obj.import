@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Misc_Rug_Rounded_Ends.obj-edf8025f6bb1ec3e57e4abf46b5c325e.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Misc_Rug_Rounded_Ends.obj-edf8025f6bb1ec3e57e4abf46b5c325e.mesh" ]
+
+source_file="res://Assets/3D Models/Prop_Misc_Rug_Rounded_Ends.obj"
+dest_files=[ "res://.import/Prop_Misc_Rug_Rounded_Ends.obj-edf8025f6bb1ec3e57e4abf46b5c325e.mesh", "res://.import/Prop_Misc_Rug_Rounded_Ends.obj-edf8025f6bb1ec3e57e4abf46b5c325e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Dining_Room_Table_Modular_Corner.obj-a27544eb7163d0123a839ce2407be569.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Dining_Room_Table_Modular_Corner.obj-a27544eb7163d0123a839ce2407be569.mesh" ]
+
+source_file="res://Assets/3D Models/Prop_Dining_Room_Table_Modular_Corner.obj"
+dest_files=[ "res://.import/Prop_Dining_Room_Table_Modular_Corner.obj-a27544eb7163d0123a839ce2407be569.mesh", "res://.import/Prop_Dining_Room_Table_Modular_Corner.obj-a27544eb7163d0123a839ce2407be569.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

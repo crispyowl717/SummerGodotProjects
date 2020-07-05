@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Misc_Picture_Square_Small.obj-48243739905c34386a3ca7bdc5a754b6.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Misc_Picture_Square_Small.obj-48243739905c34386a3ca7bdc5a754b6.mesh" ]
+
+source_file="res://Assets/3D Models/Prop_Misc_Picture_Square_Small.obj"
+dest_files=[ "res://.import/Prop_Misc_Picture_Square_Small.obj-48243739905c34386a3ca7bdc5a754b6.mesh", "res://.import/Prop_Misc_Picture_Square_Small.obj-48243739905c34386a3ca7bdc5a754b6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

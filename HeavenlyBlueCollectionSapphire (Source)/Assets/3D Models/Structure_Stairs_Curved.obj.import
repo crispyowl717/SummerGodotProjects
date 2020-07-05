@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Stairs_Curved.obj-4d07b0371b55888a3d3dec6bc3a375bc.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Stairs_Curved.obj-4d07b0371b55888a3d3dec6bc3a375bc.mesh" ]
+
+source_file="res://Assets/3D Models/Structure_Stairs_Curved.obj"
+dest_files=[ "res://.import/Structure_Stairs_Curved.obj-4d07b0371b55888a3d3dec6bc3a375bc.mesh", "res://.import/Structure_Stairs_Curved.obj-4d07b0371b55888a3d3dec6bc3a375bc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

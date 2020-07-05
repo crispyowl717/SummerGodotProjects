@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Kitchen_Cabinet_Base_Edge.obj-a62d436bc8d43eb32b8a003ec3f67bc5.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Kitchen_Cabinet_Base_Edge.obj-a62d436bc8d43eb32b8a003ec3f67bc5.mesh" ]
+
+source_file="res://Assets/3D Models/Structure_Kitchen_Cabinet_Base_Edge.obj"
+dest_files=[ "res://.import/Structure_Kitchen_Cabinet_Base_Edge.obj-a62d436bc8d43eb32b8a003ec3f67bc5.mesh", "res://.import/Structure_Kitchen_Cabinet_Base_Edge.obj-a62d436bc8d43eb32b8a003ec3f67bc5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Videos/TextIntroSequence.ogv" type="VideoStream" id=1]
+[ext_resource path="res://Scripts/Screens/TextMessageScene.gd" type="Script" id=2]
+
+[node name="TextMessageScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+stream = ExtResource( 1 )
+autoplay = true
+expand = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Foreground" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

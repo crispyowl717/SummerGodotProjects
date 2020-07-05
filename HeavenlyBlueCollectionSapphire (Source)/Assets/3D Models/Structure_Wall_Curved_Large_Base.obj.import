@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Wall_Curved_Large_Base.obj-84839a3e34da51d7168a407f877624a9.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Wall_Curved_Large_Base.obj-84839a3e34da51d7168a407f877624a9.mesh" ]
+
+source_file="res://Assets/3D Models/Structure_Wall_Curved_Large_Base.obj"
+dest_files=[ "res://.import/Structure_Wall_Curved_Large_Base.obj-84839a3e34da51d7168a407f877624a9.mesh", "res://.import/Structure_Wall_Curved_Large_Base.obj-84839a3e34da51d7168a407f877624a9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,136 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Assets/SFX/static.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Assets/UI/ScreenStaticSpriteSheet.png" type="Texture" id=2]
+[ext_resource path="res://Assets/3D Models/Prop_Living_Room_TV.obj" type="ArrayMesh" id=3]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.192157, 0.137255, 0.137255, 1 )
+
+[sub_resource type="CubeMesh" id=2]
+material = SubResource( 1 )
+size = Vector3( 1, 0.4, 0.3 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.507607, 0.572477, 0.17956 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 359, 0, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 718, 0, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 1077, 0, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 0, 476, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 359, 476, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 718, 476, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 1077, 476, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 0, 952, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 359, 952, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 718, 952, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 1077, 952, 359, 476 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 7
+atlas = ExtResource( 2 )
+region = Rect2( 0, 1428, 359, 476 )
+
+[sub_resource type="SpriteFrames" id=17]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
+"loop": true,
+"name": "Screen",
+"speed": 18.0
+} ]
+
+[sub_resource type="SpatialMaterial" id=18]
+flags_disable_ambient_light = true
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=19]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[node name="TV" type="StaticBody"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0605301, 0.284466, -0.477078 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0605301, 0.634405, -0.477078 )
+shape = SubResource( 3 )
+
+[node name="Screen" type="AnimatedSprite3D" parent="."]
+transform = Transform( 0.256361, 0, 0, 0, 0.108873, 0, 0, 0, 0.25, -0.0968646, 0.8936, -0.432551 )
+visible = false
+frames = SubResource( 17 )
+animation = "Screen"
+frame = 3
+playing = true
+
+[node name="OmniLight" type="OmniLight" parent="Screen"]
+transform = Transform( 3.90075, 0, 0, 0, 9.18505, 0, 0, 0, 4, 0, 0, 1.8274 )
+light_energy = 3.42
+shadow_enabled = true
+omni_range = 0.6
+
+[node name="Prop_Living_Room_TV" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0996458, 0.492102, -0.458882 )
+mesh = ExtResource( 3 )
+material/0 = SubResource( 18 )
+material/1 = SubResource( 19 )
+
+[node name="TV Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -40.757
+autoplay = true
