@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/2_MyKindOfWoman_Snippet.ogg-8a187354fac682ad7e605f984f0a657a.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 1/Snippet/2_MyKindOfWoman_Snippet.ogg"
+dest_files=[ "res://.import/2_MyKindOfWoman_Snippet.ogg-8a187354fac682ad7e605f984f0a657a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

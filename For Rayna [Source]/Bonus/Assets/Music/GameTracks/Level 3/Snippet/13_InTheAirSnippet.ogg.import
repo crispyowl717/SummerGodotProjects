@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/13_InTheAirSnippet.ogg-ca0d47c2d5d63232c9c47a3734d2bced.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 3/Snippet/13_InTheAirSnippet.ogg"
+dest_files=[ "res://.import/13_InTheAirSnippet.ogg-ca0d47c2d5d63232c9c47a3734d2bced.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

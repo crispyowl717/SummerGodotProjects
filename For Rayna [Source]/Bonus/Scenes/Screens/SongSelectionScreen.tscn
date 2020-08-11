@@ -1,0 +1,217 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Bonus/Fonts/MONUMENTEXTENDED-REGULAR.OTF" type="DynamicFontData" id=1]
+[ext_resource path="res://Bonus/Fonts/MONUMENTEXTENDED-ULTRABOLD.OTF" type="DynamicFontData" id=2]
+[ext_resource path="res://Bonus/Shaders/Grain.shader" type="Shader" id=3]
+[ext_resource path="res://Bonus/Fonts/mplus-1m-regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Bonus/Scripts/UI/SongSelectionScreen.gd" type="Script" id=5]
+[ext_resource path="res://Bonus/Assets/Music/GameTracks/Level 1/Full/1_Song33_88.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Bonus/Fonts/HKNOVA-MEDIUM.TTF" type="DynamicFontData" id=7]
+[ext_resource path="res://Bonus/Assets/Art/SpriteSheet.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Conductor.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Bonus/Assets/Music/GameTracks/Level 4/Snippet/21_APESHIT_SNIPPET_160.ogg" type="AudioStream" id=10]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+shader_param/amount = 4.173
+
+[sub_resource type="DynamicFont" id=2]
+resource_local_to_scene = true
+size = 67
+use_mipmaps = true
+use_filter = true
+extra_spacing_char = 25
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+resource_local_to_scene = true
+size = 45
+use_mipmaps = true
+use_filter = true
+extra_spacing_char = 10
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+resource_local_to_scene = true
+size = 18
+outline_color = Color( 1, 1, 1, 0.121569 )
+use_mipmaps = true
+use_filter = true
+extra_spacing_char = 3
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=5]
+resource_local_to_scene = true
+size = 90
+outline_size = 1
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="SongSelectionCanvas" type="CanvasLayer"]
+script = ExtResource( 5 )
+
+[node name="BackgroundColor" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -960.0
+margin_top = -540.0
+margin_right = 960.0
+margin_bottom = 540.0
+color = Color( 0.760784, 0.396078, 0.396078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SongSelectionNode" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 908.713, 518.234 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Shader" type="ColorRect" parent="SongSelectionNode"]
+modulate = Color( 0.109804, 0.109804, 0.109804, 0.0313726 )
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopBox" type="ColorRect" parent="SongSelectionNode"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -960.0
+margin_right = 960.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BottomBox" type="ColorRect" parent="SongSelectionNode"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -960.0
+margin_right = 960.0
+rect_scale = Vector2( 1, -1 )
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CoverRegion" type="Control" parent="SongSelectionNode"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AlbumCover" type="Sprite" parent="SongSelectionNode/CoverRegion"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 960, 540 )
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 8 )
+vframes = 3
+hframes = 7
+
+[node name="PrevAlbum" type="Sprite" parent="SongSelectionNode/CoverRegion"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 460, 540 )
+scale = Vector2( 0.65, 0.65 )
+texture = ExtResource( 8 )
+vframes = 3
+hframes = 7
+frame = 1
+
+[node name="NextAlbum" type="Sprite" parent="SongSelectionNode/CoverRegion"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 1460, 540 )
+scale = Vector2( 0.65, 0.65 )
+texture = ExtResource( 8 )
+vframes = 3
+hframes = 7
+frame = 1
+
+[node name="ArtistName" type="RichTextLabel" parent="SongSelectionNode"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = -568.0
+margin_top = -152.0
+margin_right = 1352.0
+margin_bottom = -56.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "NONAME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SongName" type="RichTextLabel" parent="SongSelectionNode"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = -432.0
+margin_top = -87.9999
+margin_right = 1488.0
+margin_bottom = -16.0
+custom_fonts/normal_font = SubResource( 3 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+text = "SONG 33"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpecialInstructions" type="RichTextLabel" parent="SongSelectionNode"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -8.0
+margin_top = 556.0
+margin_right = -8.0
+margin_bottom = 600.0
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "[right] press space to start song // press esc to go back here [/right]"
+text = " press space to start song // press esc to go back here "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Difficulty" type="RichTextLabel" parent="SongSelectionNode"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 680.0
+margin_top = 16.0
+margin_right = 664.0
+margin_bottom = -956.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0, 0, 0, 0 )
+bbcode_enabled = true
+bbcode_text = "[right]EASY ONE[/right]"
+text = "EASY ONE"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SnippetPlayer" type="AudioStreamPlayer2D" parent="SongSelectionNode"]
+position = Vector2( 912, 496 )
+stream = ExtResource( 6 )
+autoplay = true
+
+[node name="Conductor" parent="SongSelectionNode" instance=ExtResource( 9 )]
+stream = ExtResource( 10 )
+volume_db = -80.0
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Tween2" type="Tween" parent="."]
+[connection signal="beat" from="SongSelectionNode/Conductor" to="." method="_on_Conductor_beat"]
+[connection signal="tween_completed" from="Tween2" to="." method="_on_Tween2_tween_completed"]
+[connection signal="tween_started" from="Tween2" to="." method="_on_Tween2_tween_started"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/9_IlomiloSnippet.ogg-a65a1e090fefb3cf7b7b1482821e30e8.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 2/Snippet/9_IlomiloSnippet.ogg"
+dest_files=[ "res://.import/9_IlomiloSnippet.ogg-a65a1e090fefb3cf7b7b1482821e30e8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

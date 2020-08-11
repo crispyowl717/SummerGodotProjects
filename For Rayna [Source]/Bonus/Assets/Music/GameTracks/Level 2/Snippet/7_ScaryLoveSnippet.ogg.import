@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/7_ScaryLoveSnippet.ogg-a2dcba75bcdd450b1ba327af5e971244.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 2/Snippet/7_ScaryLoveSnippet.ogg"
+dest_files=[ "res://.import/7_ScaryLoveSnippet.ogg-a2dcba75bcdd450b1ba327af5e971244.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

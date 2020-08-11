@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/6_LovefoolSnippet.ogg-ee96b702e113cbb57e92ce8db69a7f55.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 2/Snippet/6_LovefoolSnippet.ogg"
+dest_files=[ "res://.import/6_LovefoolSnippet.ogg-ee96b702e113cbb57e92ce8db69a7f55.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

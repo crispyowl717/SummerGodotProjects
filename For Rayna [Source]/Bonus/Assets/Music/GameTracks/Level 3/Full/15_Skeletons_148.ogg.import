@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/15_Skeletons_148.ogg-ff28b5b0504961da7003717049c26260.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 3/Full/15_Skeletons_148.ogg"
+dest_files=[ "res://.import/15_Skeletons_148.ogg-ff28b5b0504961da7003717049c26260.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

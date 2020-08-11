@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/5_StrungOut_104.ogg-e28b1c58f81d8f63387356fcfb747f39.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 2/Full/5_StrungOut_104.ogg"
+dest_files=[ "res://.import/5_StrungOut_104.ogg-e28b1c58f81d8f63387356fcfb747f39.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

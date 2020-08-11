@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/18_Astrothunder_152.ogg-5d6acea81eafc20701fb146043952492.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 4/Full/18_Astrothunder_152.ogg"
+dest_files=[ "res://.import/18_Astrothunder_152.ogg-5d6acea81eafc20701fb146043952492.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

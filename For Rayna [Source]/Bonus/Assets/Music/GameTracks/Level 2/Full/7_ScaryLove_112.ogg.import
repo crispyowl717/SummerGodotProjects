@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/7_ScaryLove_112.ogg-5c5eb074954e89261bdcad24d4bfb438.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 2/Full/7_ScaryLove_112.ogg"
+dest_files=[ "res://.import/7_ScaryLove_112.ogg-5c5eb074954e89261bdcad24d4bfb438.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

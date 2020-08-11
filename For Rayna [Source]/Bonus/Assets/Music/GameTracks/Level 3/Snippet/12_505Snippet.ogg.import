@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/12_505Snippet.ogg-70771a197f151ab8c7472fa6281b86de.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 3/Snippet/12_505Snippet.ogg"
+dest_files=[ "res://.import/12_505Snippet.ogg-70771a197f151ab8c7472fa6281b86de.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

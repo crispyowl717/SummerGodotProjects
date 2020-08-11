@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/20_Magnolia_163.ogg-baea90a1c07a0ee4bdf7e55e20e20437.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 4/Full/20_Magnolia_163.ogg"
+dest_files=[ "res://.import/20_Magnolia_163.ogg-baea90a1c07a0ee4bdf7e55e20e20437.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/17_PimpinSnippet.ogg-d3b1eaa405f02cc54e497ecf61f00a34.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 4/Snippet/17_PimpinSnippet.ogg"
+dest_files=[ "res://.import/17_PimpinSnippet.ogg-d3b1eaa405f02cc54e497ecf61f00a34.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

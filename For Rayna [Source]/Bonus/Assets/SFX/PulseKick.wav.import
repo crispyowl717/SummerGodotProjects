@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/PulseKick.wav-51e7e2863f91be8a38284be5c5afd1f6.sample"
+
+[deps]
+
+source_file="res://Bonus/Assets/SFX/PulseKick.wav"
+dest_files=[ "res://.import/PulseKick.wav-51e7e2863f91be8a38284be5c5afd1f6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

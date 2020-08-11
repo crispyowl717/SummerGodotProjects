@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/10_TidenFlyver_123.ogg-7f41435006ce05a090f0691badd5bc4a.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 2/Full/10_TidenFlyver_123.ogg"
+dest_files=[ "res://.import/10_TidenFlyver_123.ogg-7f41435006ce05a090f0691badd5bc4a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/14_LetItGo_150.ogg-3e4a7363d63a9f0b81303bf9f3f12b14.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 3/Full/14_LetItGo_150.ogg"
+dest_files=[ "res://.import/14_LetItGo_150.ogg-3e4a7363d63a9f0b81303bf9f3f12b14.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

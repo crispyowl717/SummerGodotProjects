@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/19_Wasted_157.ogg-e2578bc980f8007d0408e788e36af4ca.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 4/Full/19_Wasted_157.ogg"
+dest_files=[ "res://.import/19_Wasted_157.ogg-e2578bc980f8007d0408e788e36af4ca.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

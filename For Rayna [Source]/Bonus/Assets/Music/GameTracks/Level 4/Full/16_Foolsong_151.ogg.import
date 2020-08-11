@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/16_Foolsong_151.ogg-31ff1865576f5b9ed68069ee9b5a72af.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 4/Full/16_Foolsong_151.ogg"
+dest_files=[ "res://.import/16_Foolsong_151.ogg-31ff1865576f5b9ed68069ee9b5a72af.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

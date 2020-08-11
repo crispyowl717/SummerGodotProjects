@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/4_ALittleWhile_100.ogg-95dc91a4dd2c9f91d69d40178cd0f3b6.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 1/Full/4_ALittleWhile_100.ogg"
+dest_files=[ "res://.import/4_ALittleWhile_100.ogg-95dc91a4dd2c9f91d69d40178cd0f3b6.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

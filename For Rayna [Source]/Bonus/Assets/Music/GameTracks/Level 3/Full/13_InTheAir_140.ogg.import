@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/13_InTheAir_140.ogg-1a4f893c466b5590916299eeb534c0df.oggstr"
+
+[deps]
+
+source_file="res://Bonus/Assets/Music/GameTracks/Level 3/Full/13_InTheAir_140.ogg"
+dest_files=[ "res://.import/13_InTheAir_140.ogg-1a4f893c466b5590916299eeb534c0df.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
